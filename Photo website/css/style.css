@@ -1,0 +1,133 @@
+/*****************************/		
+/*        GENERAL             *
+/*****************************/	
+
+body {
+	background: rgb(249,249,249);
+	font-family: georgia,palatino,Arial,serif;
+	font-size: 16px; /* default font size for your site */
+}
+
+/*****************************/		
+/*    Header and nav bar      *
+/*****************************/	
+
+header {
+	position: fixed;
+	float: left;
+	width: 18%;
+	margin: 2% 0% 0% 2%;
+}
+
+nav ul {
+	margin-top:2%; /* looks aligned with 1% more than the image*/
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 0.8rem;
+	opacity: 0.2;
+	color: black;
+	font-size: 1.4rem;
+	letter-spacing:0.15rem;
+}
+
+nav ul li a:hover {
+	opacity: 0.7;	
+}
+
+header .selected {
+	opacity: 1;	
+}
+
+
+/*****************************/		
+/*         Photos            */
+/*****************************/	
+
+#portfolio {
+	float: right;
+	width: 78%;
+	margin: 2% 2% 0% 0%;
+}
+
+.onephoto a img {
+	float: left;
+	margin: 1%;
+	width: 98%;
+	opacity: 0.3;
+}
+
+#portfolio ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.twophotos li img{
+	float: left;
+	margin: 1%;
+	width: 48%;
+	opacity: 0.3;
+}
+
+.threephotos li img{
+	float: left;
+	margin: 1%;
+	width: 31.3%;
+	opacity: 0.3;
+}
+
+.fourphotos li img{
+	float: left;
+	margin: 1%;
+	width: 23%;
+	opacity: 0.3;
+}
+
+a:hover img{
+	opacity: 1;
+}
+
+/*****************************/		
+/*          about            */
+/*****************************/	
+
+#bio {
+	float: left;
+	margin: 1%;
+	width: 98%;
+	opacity: 0.2;
+	font-size: 1.1rem;
+	letter-spacing:0.05rem;
+}
+
+#bio a {
+	text-decoration: none;
+	color: black;
+}
+
+#bio a:hover p {
+	opacity: 1;
+}
+
+
+/*****************************/		
+/*          Footer           */
+/*****************************/	
+
+
+footer {
+	clear: both;
+	float: right;
+	margin: 0% 3% 2%;
+}
+
+footer p {
+	color: rgb(210,210,210);
+	font-size: 1rem;
+}
