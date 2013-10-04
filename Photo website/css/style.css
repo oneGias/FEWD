@@ -29,7 +29,7 @@ nav ul {
 nav ul li a {
 	display: block;
 	text-decoration: none;
-	margin-bottom: 0.8rem;
+	margin-bottom: 0.4rem;
 	opacity: 0.2;
 	color: black;
 	font-size: 1.4rem;
@@ -55,17 +55,17 @@ header .selected {
 	margin: 2% 2% 0% 0%;
 }
 
+#portfolio ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
 .onephoto a img {
 	float: left;
 	margin: 1%;
 	width: 98%;
 	opacity: 0.3;
-}
-
-#portfolio ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
 }
 
 .twophotos li img{
@@ -111,15 +111,13 @@ a:hover img{
 	color: black;
 }
 
-#bio a:hover p {
+#bio p:hover {
 	opacity: 1;
 }
-
 
 /*****************************/		
 /*          Footer           */
 /*****************************/	
-
 
 footer {
 	clear: both;
@@ -130,4 +128,30 @@ footer {
 footer p {
 	color: rgb(210,210,210);
 	font-size: 1rem;
+}
+
+/*****************************/		
+/*       Media queries       */
+/*****************************/	
+
+@media (max-width: 700px) {
+	header {
+		position: static;
+		width: 100%;
+		margin: 2% 2% 0% 2%;
+	}
+
+	nav ul li a {
+		display: inline;
+		font-size: 1.2rem;
+		letter-spacing:0.05rem;
+	}
+
+	#portfolio {
+		width: 96%;
+		margin: 2% 2% 0% 2%;
+	}
+	footer p {
+	font-size: 0.7rem;
+	}
 }
