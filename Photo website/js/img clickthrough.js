@@ -1,21 +1,16 @@
 $(function() {
-	if(typeof(localStorage) === 'undefined') {
-		alert('You are dead to me.');
-	} else {
-		var faveColor = localStorage.getItem('faveColor');
-		$('body').css('background', faveColor);
-		$('#color').html(faveColor);
-		$('#btn').on('click', changeColor);
-	}
+	$('#portfolio, a, img')
+		.on('click', function() {
+			$(this).toggleClass('clicked');
+		})
+/*		.on('mousemove', function(event) {
+			var x = event.pageX;
+			var y = event.pageY;
+			var boxOffset = $(this).offset();
+			$('#xLocation').text(x - boxOffset.left);
+			$('#yLocation').text(y - boxOffset.top);
+		});*/
 });
-
-function changeColor() {
-	var response = $('#colors_string').val();
-	$('body').css('background',response);
-	$('#color').html(response);
-	localStorage.setItem('faveColor', response);
-}
-
 
 
 
